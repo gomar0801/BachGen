@@ -1,0 +1,5 @@
+music21>=6.1
+pretty_midi>=0.2
+mido>=1.2
+beautifulsoup4>=4.12
+lxml>=4.9
