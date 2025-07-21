@@ -3,6 +3,6 @@
 
 
 
-sample1=
-sample2=
-sample3=
+sample1=QmbbGKtZ9G6DkWxvSeU516c1ktWiFJmEbHGmR3JFtLAPyC
+sample2=QmbbWCwo3rhaJ2wKL6H7aQPX9D6HfQxLZKPzzyKhYM68GA
+sample3=Qmb3mYXSWTtd5JcSrGSamvS9xaht9hdmp3BQvuiKJfKQjY
