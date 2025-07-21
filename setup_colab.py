@@ -31,10 +31,10 @@ def setup_colab(repo_url, requirements_url=None):
     us = environment.UserSettings()
     us['musescoreDirectPNGPath'] = '/usr/bin/mscore'  # ou '/usr/bin/musescore' selon les versions
 
-    print("📁 Clonage du dépôt GitHub...")
-    os.system(f'git clone {repo_url}')
-    repo_name = repo_url.rstrip('.git').split('/')[-1]
-    sys.path.append(f'/content/{repo_name}')
+    #print("📁 Clonage du dépôt GitHub...")
+    #os.system(f'git clone {repo_url}')
+    #repo_name = repo_url.rstrip('.git').split('/')[-1]
+    #sys.path.append(f'/content/{repo_name}')
 
     if requirements_url:
         print("📚 Installation des dépendances...")
