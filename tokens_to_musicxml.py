@@ -12,5 +12,5 @@ def convert_tokens_to_musicxml(tokens, output_path):
     else:
         token_string = tokens
 
-    score = tokens_to_score(token_string,True)
+    score = tokens_to_score(token_string)
     score.write('musicxml', fp=output_path)
