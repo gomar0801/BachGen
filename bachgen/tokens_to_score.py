@@ -3,7 +3,7 @@ from music21 import key, meter, note, stream, bar, clef, layout, chord, tie, pit
 # dictionary to change note names
 sharp_to_flat = {'C#': 'D-', 'D#': 'E-', 'F#': 'G-', 'G#': 'A-', 'A#': 'B-'}
 flat_to_sharp = {v:k for k, v in sharp_to_flat.items()}
-
+ 
 # translate note numbers into note names considering key signature
 def pitch_to_name(pitch_, key=key.KeySignature(0)):
     if pitch_.isdecimal():
