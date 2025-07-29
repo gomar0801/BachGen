@@ -1,9 +1,10 @@
 # BachGen
 
-# in Google Colab:
+# in a notebook:
 !git clone https://github.com/gomar0801/BachGen.git
-!pip install -r requirements.txt
+!pip install -r BachGen/requirements.txt
 !pip install ./BachGen
+!python ../scripts/setup.py
 
 ```
 from bachgen import musicxml_to_tokens
