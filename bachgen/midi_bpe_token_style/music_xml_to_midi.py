@@ -32,21 +32,24 @@ def music_xml_to_midi(xml_path, midi_path=None):
     
     try:
         # Load MusicXML file
+        from music21 import converter
+        
         print(f"Loading MusicXML: {xml_path}")
-        score = Score(str(xml_path), fmt="musicxml")
+        score = converter.parse(str(xml_path))
         
-        # Display basic info
+        # Display basic info using music21
         print(f"✓ Loaded successfully:")
-        print(f"  Duration: {score.end()} ticks")
-        print(f"  Tracks: {len(score.tracks)}")
-        print(f"  Time division: {score.tpq} ticks per quarter")
+        print(f"  Duration: {score.duration.quarterLength} quarter notes")
+        print(f"  Parts: {len(score.parts)}")
         
-        for i, track in enumerate(score.tracks):
-            print(f"  Track {i}: {len(track.notes)} notes, '{track.name}', program {track.program}")
+        for i, part in enumerate(score.parts):
+            notes = part.flatten().notes
+            instrument = part.getInstrument()
+            print(f"  Part {i}: {len(notes)} notes, instrument: {instrument}")
         
-        # Save as MIDI
+        # Save as MIDI using music21
         print(f"Saving MIDI: {midi_path}")
-        score.dump_midi(str(midi_path))
+        score.write('midi', fp=str(midi_path))
         print(f"✓ MIDI file created: {midi_path}")
         
         return midi_path
