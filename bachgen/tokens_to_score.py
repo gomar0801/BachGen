@@ -1,4 +1,4 @@
-from music21 import *
+from music21 import key, meter, note, stream, bar, clef, layout, chord, tie, pitch
 
 # dictionary to change note names
 sharp_to_flat = {'C#': 'D-', 'D#': 'E-', 'F#': 'G-', 'G#': 'A-', 'A#': 'B-'}
