@@ -33,7 +33,7 @@ def music_xml_to_midi(xml_path, midi_path=None):
     try:
         # Load MusicXML file
         print(f"Loading MusicXML: {xml_path}")
-        score = Score(str(xml_path))
+        score = Score(str(xml_path), fmt="musicxml")
         
         # Display basic info
         print(f"✓ Loaded successfully:")
