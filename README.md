@@ -1,17 +1,13 @@
 # BachGen
 
 # in a notebook:
-!git clone https://github.com/gomar0801/BachGen.git
-!pip install -r BachGen/requirements.txt
-!pip install ./BachGen
-!python ../scripts/setup.py
-
+!rm -rf BachGen && git clone https://github.com/gomar0801/BachGen.git
+!chmod +x ./BachGen/scripts/setup.sh
+!./BachGen/scripts/setup.sh
 ```
-from bachgen import musicxml_to_tokens
+from bachgen.display_and_play_partition import display_and_play 
 
-
-import os
-xml_files = os.listdir('BachGen/xml_samples')
+display_and_play('./BachGen/musicxml_sample/minimal.musicxml')
 ```
 
 sample1=QmbbGKtZ9G6DkWxvSeU516c1ktWiFJmEbHGmR3JFtLAPyC
