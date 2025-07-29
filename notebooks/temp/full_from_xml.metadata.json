@@ -1,0 +1,61 @@
+{
+  "parts": [
+    {
+      "index": 0,
+      "name": "Piano",
+      "instrument": "P1: Piano: Piano",
+      "clefs": [
+        {
+          "offset": 0.0,
+          "string": "<music21.clef.TrebleClef>"
+        }
+      ],
+      "measures": 16,
+      "note_count": 63
+    },
+    {
+      "index": 1,
+      "name": "Piano",
+      "instrument": "P2: Piano: Piano",
+      "clefs": [
+        {
+          "offset": 0.0,
+          "string": "<music21.clef.BassClef>"
+        }
+      ],
+      "measures": 16,
+      "note_count": 64
+    }
+  ],
+  "global_elements": {
+    "time_signatures": [
+      {
+        "offset": 0.0,
+        "numerator": 3,
+        "denominator": 4,
+        "string": "<music21.meter.TimeSignature 3/4>"
+      },
+      {
+        "offset": 0.0,
+        "numerator": 3,
+        "denominator": 4,
+        "string": "<music21.meter.TimeSignature 3/4>"
+      }
+    ],
+    "key_signatures": [
+      {
+        "offset": 0.0,
+        "sharps": -2,
+        "string": "B- major"
+      },
+      {
+        "offset": 0.0,
+        "sharps": -2,
+        "string": "B- major"
+      }
+    ],
+    "tempo_markings": [],
+    "title": null,
+    "composer": "Daniel Brink Towner, 1903"
+  }
+}
