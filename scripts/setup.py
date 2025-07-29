@@ -36,9 +36,9 @@ def setup_colab(repo_url, requirements_url=None):
     #repo_name = repo_url.rstrip('.git').split('/')[-1]
     #sys.path.append(f'/content/{repo_name}')
 
-    if requirements_url:
-        print("📚 Installation des dépendances...")
-        os.system(f'pip install -r {requirements_url}')
+    # if requirements_url:
+    #     print("📚 Installation des dépendances...")
+    #     os.system(f'pip install -r {requirements_url}')
 
     print("✅ Environnement prêt !")
 
