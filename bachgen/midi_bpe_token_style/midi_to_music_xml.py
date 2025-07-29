@@ -39,8 +39,8 @@ def midi_to_music_xml(midi_path, xml_path=None):
         print(f"✓ Loaded successfully:")
         print(f"  Duration: {score.duration.quarterLength} quarter notes")
         print(f"  Parts: {len(score.parts)}")
-        print(f"  Time signatures: {[str(ts) for ts in score.getTimeSignatures()]}")
-        print(f"  Key signatures: {[str(ks) for ks in score.getKeySignatures()]}")
+        print(f"  Time signatures: {[str(ts) for ts in score.flatten().getElementsByClass('TimeSignature')]}")
+        print(f"  Key signatures: {[str(ks) for ks in score.flatten().getElementsByClass('KeySignature')]}")
         
         # Add metadata
         score.append(metadata.Metadata())
