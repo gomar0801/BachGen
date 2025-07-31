@@ -242,7 +242,7 @@ def load_MusicXML(mxml_path): # load MusicXML contents using BeautifulSoup
 
     return [part.find_all('measure') for part in parts], soup
 
-def MusicXML_to_tokens(soup_or_mxml_path, note_name=True): # use this method
+def MusicXML_to_tokens_transparent(soup_or_mxml_path, note_name=True): # use this method
     if type(soup_or_mxml_path) is str:
         parts, soup = load_MusicXML(soup_or_mxml_path)
     else:
