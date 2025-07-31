@@ -1,4 +1,4 @@
-from tokens_to_score import tokens_to_score
+from bachgen.tokens_to_score import tokens_to_score
 
 def convert_tokens_to_musicxml(tokens, output_path):
     """
