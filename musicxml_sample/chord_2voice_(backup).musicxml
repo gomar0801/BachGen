@@ -73,7 +73,6 @@
       </backup>
 	  <!--=========== Notes temps 1 ===========-->
       <note>
-		<chord />
         <pitch>
           <step>C</step>
           <octave>5</octave>
@@ -84,7 +83,6 @@
       </note>
 	  <!--=========== Notes temps 2 ===========-->
       <note>
-		<chord />
         <pitch>
           <step>D</step>
           <octave>5</octave>
@@ -95,7 +93,6 @@
       </note>
 	  <!--=========== Notes temps 3 ===========-->
       <note>
-		<chord />
         <pitch>
           <step>E</step>
           <octave>5</octave>
@@ -106,7 +103,6 @@
       </note>
 	  <!--=========== Notes temps 4 ===========-->
       <note>
-		<chord />
         <pitch>
           <step>F</step>
           <octave>5</octave>
