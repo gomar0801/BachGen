@@ -1,5 +1,5 @@
 import pytest
-from bachgen.score_to_tokens import MusicXML_to_tokens
+from bachgen.score_to_tokens_solution_all2 import MusicXML_to_tokens
 
 def test_minimal_xml_to_tokens():
     """Test converting minimal MusicXML to tokens"""
