@@ -1,7 +1,7 @@
 # bachgen/vocab_pipeline.py
 from pathlib import Path
 from typing import Iterable, Tuple, Dict
-from ..vocab_utils import build_vocab, save_vocab, encode_dir_to_ids
+from bachgen.vocab_utils import build_vocab, save_vocab, encode_dir_to_ids
 
 def build_and_encode(
     token_dir: Path,
