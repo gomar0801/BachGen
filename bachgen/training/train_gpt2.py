@@ -6,7 +6,7 @@ import math
 import torch
 from transformers import GPT2Config, GPT2LMHeadModel, TrainingArguments, Trainer
 
-from .datasets import PostTokenizedDataset, SimpleDataCollator
+from bachgen.training.datasets import PostTokenizedDataset, SimpleDataCollator
 
 def build_gpt2_config(
     vocab_size: int,
