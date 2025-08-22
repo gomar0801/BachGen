@@ -10,7 +10,6 @@ asttokens==3.0.0
 async-lru==2.0.5
 attrs==25.3.0
 babel==2.17.0
--e git+ssh://git@github.com/gomar0801/BachGen.git@b102de6769b6ddc482aaa4dfb5d40c1f404339d3#egg=bachgen
 beautifulsoup4==4.13.4
 bleach==6.2.0
 certifi==2025.7.14
