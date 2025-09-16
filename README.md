@@ -93,8 +93,8 @@ Où :
 - `clef_treble` = clé de sol  
 - `key_natural_0` = do majeur (aucun dièse/bémol)  
 - `time_4/4` = signature rythmique 4/4  
-- `note_C4` = note Do 4  
-- `len_4` = ronde (4 temps)  
+- `note_C4` = note Do à l'octave 4  
+- `len_4` = durée de 4 temps  
 
 ---
 
@@ -103,18 +103,18 @@ Où :
 La tokenisation gère plusieurs cas problématiques détectés dans ScoreTransformers :
 - **Notes transparentes** (`print-object="no"`) → ignorées  
 - **Silences superposés à des notes** → ignorés  
-- **Multi-voix / accords** → réécriture des mesures avec harmonisation des durées  
+- **Multi-voix / accords** → réécriture des mesures en 1 voix avec harmonisation des durées  
 - **Absence de voice** → ajout implicite pour consistance  
 
 Chaque partition est analysée et un CSV est produit avec :
 - `% notes transparentes ignorées`  
 - `% silences superposés ignorés`  
-- `% positions harmonisées`
+- `% positions harmonisées, notes jouées en meme temps mais d'une durée differente harmonisées en 1 accord d'une meme durée`
 
 Exemple de résultats (corpus classique piano) :
-- **Notes transparentes ignorées** : ~1.2 % en moyenne  
-- **Silences superposés ignorés** : ~0.6 %  
-- **Harmonisations appliquées** : ~2.4 % des éléments  
+- **Notes transparentes ignorées** : ~1.3 % en moyenne  
+- **Silences superposés ignorés** : ~4 %  en moyenne
+- **Harmonisations appliquées** : ~20 % des éléments (bémol du projet)  
 
 ---
 
