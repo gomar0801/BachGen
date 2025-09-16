@@ -166,7 +166,7 @@ piece_ids = generate_piece(
 
 ## 📓 Notebook Colab
 
-👉 [Ouvrir le notebook sur Colab](VOTRE-LIEN-COLAB-ICI)  
+👉 [Ouvrir le notebook sur Colab]([VOTRE-LIEN-COLAB-ICI](https://colab.research.google.com/github/gomar0801/BachGen/blob/main/notebooks/Pipeline.ipynb))  
 
 Ce notebook montre le pipeline complet : download → conversion → tokenisation → vocab/IDs → entraînement → génération.
 
